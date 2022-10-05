@@ -1,0 +1,316 @@
+
+<!-- Design your own home page under the department system. Page layout is up to each individual; however, information to appear on the page should include:
+a. Title
+b. Your name (nickname)
+c. Your picture(s)
+d. A good introduction of yourself
+e. Others
+You must hard code your homepage in HTML, CSS, Bootstrap. No tools are allowed. 
+You must use the HTML and CSS components as many as possible in your home page. 
+Others advanced HTML features such as sounds, animation, etc. are optional.
+
+ -->
+<!DOCTYPE html>
+<style>
+
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: Perpetua, serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("IMG_7935.jpg");
+  border-style:solid;
+  border-color:white;
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+img.profilepic{
+    border: 5px solid #ffffff;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    align-items: center;
+    display: inline-block;
+}
+
+div.polaroid {
+  width: 400px;
+  height: 320px;
+  background: #ffffff;;
+  padding: 10px;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  align-items: center;
+}
+
+div.container {
+  width: 300px;
+  padding: 10 3rem;
+}
+
+h{	
+    boarder-style: solid;
+    border-width: 100px 20px;
+}
+
+
+h2{
+    padding: 1em;
+    text-align: left;
+    font-family: Perpetua, serif;
+}
+
+p::first-letter{
+font-size:25px;
+}
+
+h1::first-letter{
+font-size:60px;
+}
+
+p2{
+    padding: 1em;
+    text-align: left;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    font-size: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    font-family: Perpetua, serif;
+    background-image: linear-gradient(150deg, rgb(236, 236, 236), rgb(255, 172, 193));
+}
+
+header * {
+    display: inline;
+    height: 30px;
+}
+
+header ul {
+    padding: 1em;
+    margin: 5px;
+}
+
+header li {
+    text-align: center; 
+}
+
+a:link {
+  color: DeepPink;
+}
+
+a:visited {
+  color: PaleVioletRed;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: red;
+}
+
+section {
+    style="height: 50vh;"
+    border: 5px solid white;
+    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Perpetua, serif;;
+
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+
+#aboutme {
+    background-position: right top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('IMG_8148.jpg');
+}
+
+#education {
+    position: sticky;
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/canyon.jpg');
+}
+#hobby {
+    background-position: right bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-image: linear-gradient(90deg,rgba(255,255,255,0.85),rgba(255, 255, 255, 0.050)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/field.jpg');
+}
+
+footer {
+    text-align: Center;
+    padding: 50px;
+    font-family: Perpetua, serif;;
+    Color: Black;
+    font-size:12px;
+}
+
+</style>
+
+<html>
+    <head>
+        <title>Celine's website</title>
+        <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home" style="text-decoration:none">&#127968Home  </a></li>
+                    <li><a href="#aboutme" style="text-decoration:none">&#128081About  </a></li>
+                    <li><a href="#education" style="text-decoration:none">&#127891Education Background  </a></li>
+                    <li><a href="#hobby" style="text-decoration:none">&#9917Hobbies  </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            
+	<section id="home">
+                <div class="section-inner"></div>
+			<div class="hero-image">
+ 				 <div class="hero-text">
+    				 <h style="font-size:85px"><b>Celine LAM</b></h>
+    				 <p style="font-size:35px">Welcome to my website</p>
+			 	 
+            <nav>
+                <ul>
+                    <li><a href="#aboutme" style="color: White; font-size:25px;">See More</a></li>
+                </ul>
+            </nav>
+
+  			</div>
+		</div>
+            	   
+		<br>
+            </section>
+            
+
+            
+            <section id="aboutme" >
+                <div class="section-inner"></div>
+                    <h1>About Me</h1><br>
+                                   
+                    <img src="IMG_3040.jpg" class="profilepic"><br>
+                    <p>Welcome to my website!&#128513 <br> I am taking a programming course with course code COMP5322 in Hong Kong Polytechnic University now.<br> This website is one of the projects in this course and it requires us to demonstrate HTML coding skills.<br> I'm going to introduce myself here and share my photos with you.</p>
+                    <p>Astrological Sign: &#9811</p>
+                    <p>Hobbies: <br>Photography &#128247  <br>Yoga &#129496  <br>Travel &#9973</p>
+                    <p>Occupation: <br>Field Service Engineer &#128295</p>
+                </section>
+            
+            <section id="education">
+                <h1>Education</h1><br>
+                <h2><b>Hong Kong Polytechnic University (HKPolyU)</b></h2>
+                <p><i>Master of Science in Health Informatics</i> (2021 - current)<br></p>
+                
+                <h2><b>The Chinese University of Hong Kong (CUHK)</b></h2>
+                <p>BEng(BME) <i>Bachelor of Biomedical Engineer</i> (2014 - 2019)<br></p>
+                <p>Internship: Visiting Research Internship in <i>Korea Institute of Science and Technology (KIST)</i></p>
+                <p>&#9881 Matlab application development for High Intensity Focused Ultrasound (HIFU) focal detection and pressure scanning</p>
+                <p>&#9999 Application GUI Design<br></p>   
+
+		 <div class="polaroid">
+                        <img src="IMG_7935.jpeg" alt="Rooftop at Humanities Building, NA College CUHK" style="width:100%">
+                 <div class="container">      
+ 		 <p>Rooftop at Humanities Building, NA College CUHK</p>
+                 </div>       
+		 <br>
+		 <div class="polaroid">
+                        <img src="IMG_3107.jpg" alt="Rooftop at Humanities Building, NA College CUHK" style="width:100%">
+                 <div class="container">      
+ 		 <p>Rooftop at Humanities Building, NA College CUHK</p>
+                 </div>  
+
+            </section>
+
+            <section id="hobby">
+                <div class="section-inner">
+                    <h1>Hobbies</h1><br>
+                    <h1>Travel</h1>
+                    <p2>Countries I've been to</p2><br>
+
+                    <div class="polaroid">
+                        <img src="https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/llama.jpg" alt="5 Terre" style="width:100%">
+                        <div class="container"> 
+
+                        <p>Cinque Terre</p>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="polaroid">
+                        <img src="https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/llama.jpg" alt="5 Terre" style="width:100%">
+                        <div class="container"> 
+
+                        <p>Cinque Terre</p>
+                        </div>
+                    </div>
+
+                    <h1>Yoga</h1>
+                    <p2>I've been learning aerial yoga for <i>2</i> years. Yoga has improved my flexibility, stability, and balance. Let me share some photos with you.</p2><br>
+              
+            </section>
+        </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#home" style="text-decoration:none">Return &#127968</a></li>
+                </ul>
+            </nav>
+        © Copyright Celine LAM, Oct 2022<br>
+        </footer>
+    </body>
+</html>
