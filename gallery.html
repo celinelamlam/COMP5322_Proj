@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+a:link {
+   text-decoration:none;
+   color: black;
+ }
+ 
+ a:visited {
+   text-decoration:none;
+   color: black;
+ }
+ 
+ a:hover {
+   text-decoration:none;
+   color: white;
+   background-color: black;
+ }
+ 
+ a:active {
+   color: black;
+   text-decoration: underline;
+ }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align:center;
+  color: Black;
+  font-family: Perpetua, serif;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 5px;
+}
+
+.column img {
+  margin-top: 5px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+hr.divider {
+  width: 7%;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  border: 0 none;
+  border-radius:5px;
+}
+
+</style>
+<head>
+    <title>Celine's Gallery</title>
+</head>
+
+<body>
+
+<h1>✨ My Gallery 📸</h1>
+<hr class="divider">
+
+<li><a href="Mid-pro.html#home">Return Home &#127968</a></li>
+
+<div class="row"> 
+  <div class="column">
+    <br>
+    <img src="IMG_2489.jpg" style="width:100%">
+    <img src="IMG_7935.jpeg" style="width:100%">
+    <img src="IMG_3809.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <br>
+    <br>
+    <img src="IMG_2491.jpg" style="width:100%">
+    <img src="IMG_2488.jpg" style="width:100%">
+    <img src="IMG_2534.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <br>
+    <img src="IMG_3809.jpg" style="width:100%">
+    <img src="IMG_1650.jpg" style="width:100%">
+    <img src="9059.jpg" style="width:100%">
+    <img src="9266.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
